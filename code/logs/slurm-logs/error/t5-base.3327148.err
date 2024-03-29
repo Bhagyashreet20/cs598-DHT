@@ -1,0 +1,25 @@
+
+Currently Loaded Modules:
+  1) cue-login-env/1.0   4) gcc/11.4.0      7) anaconda3_cpu/23.7.4
+  2) slurm-env/0.1       5) openmpi/4.1.6
+  3) default-s11         6) python/3.7.17
+
+Inactive Modules:
+  1) cuda
+
+ 
+
+usage: conda [-h] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'activate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'env', 'token', 'server', 'verify', 'repo')
+Downloading spiece.model:   0%|          | 0.00/792k [00:00<?, ?B/s]Downloading spiece.model: 100%|██████████| 792k/792k [00:00<00:00, 34.4MB/s]
+Downloading (…)cial_tokens_map.json:   0%|          | 0.00/2.20k [00:00<?, ?B/s]Downloading (…)cial_tokens_map.json: 100%|██████████| 2.20k/2.20k [00:00<00:00, 844kB/s]
+Downloading tokenizer_config.json:   0%|          | 0.00/2.54k [00:00<?, ?B/s]Downloading tokenizer_config.json: 100%|██████████| 2.54k/2.54k [00:00<00:00, 3.95MB/s]
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=True`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Downloading config.json:   0%|          | 0.00/1.40k [00:00<?, ?B/s]Downloading config.json: 100%|██████████| 1.40k/1.40k [00:00<00:00, 1.22MB/s]
+Downloading model.safetensors:   0%|          | 0.00/990M [00:00<?, ?B/s]Downloading model.safetensors:   3%|▎         | 31.5M/990M [00:00<00:04, 232MB/s]Downloading model.safetensors:   6%|▋         | 62.9M/990M [00:00<00:04, 221MB/s]Downloading model.safetensors:  12%|█▏        | 115M/990M [00:00<00:02, 299MB/s] Downloading model.safetensors:  16%|█▌        | 157M/990M [00:00<00:02, 312MB/s]Downloading model.safetensors:  20%|██        | 199M/990M [00:00<00:02, 329MB/s]Downloading model.safetensors:  25%|██▌       | 252M/990M [00:00<00:02, 366MB/s]Downloading model.safetensors:  31%|███       | 304M/990M [00:00<00:01, 391MB/s]Downloading model.safetensors:  36%|███▌      | 357M/990M [00:00<00:01, 422MB/s]Downloading model.safetensors:  41%|████▏     | 409M/990M [00:01<00:01, 373MB/s]Downloading model.safetensors:  47%|████▋     | 461M/990M [00:01<00:01, 392MB/s]Downloading model.safetensors:  52%|█████▏    | 514M/990M [00:01<00:01, 405MB/s]Downloading model.safetensors:  57%|█████▋    | 566M/990M [00:01<00:00, 425MB/s]Downloading model.safetensors:  62%|██████▏   | 619M/990M [00:01<00:00, 410MB/s]Downloading model.safetensors:  68%|██████▊   | 671M/990M [00:01<00:00, 435MB/s]Downloading model.safetensors:  73%|███████▎  | 724M/990M [00:01<00:00, 432MB/s]Downloading model.safetensors:  78%|███████▊  | 776M/990M [00:01<00:00, 447MB/s]Downloading model.safetensors:  84%|████████▎ | 828M/990M [00:02<00:00, 452MB/s]Downloading model.safetensors:  89%|████████▉ | 881M/990M [00:02<00:00, 465MB/s]Downloading model.safetensors:  94%|█████████▍| 933M/990M [00:02<00:00, 467MB/s]Downloading model.safetensors: 100%|█████████▉| 986M/990M [00:02<00:00, 458MB/s]Downloading model.safetensors: 100%|██████████| 990M/990M [00:02<00:00, 403MB/s]
+Downloading generation_config.json:   0%|          | 0.00/147 [00:00<?, ?B/s]Downloading generation_config.json: 100%|██████████| 147/147 [00:00<00:00, 107kB/s]
+/sw/external/python/anaconda3_cpu/lib/python3.9/site-packages/transformers/generation/utils.py:1254: UserWarning: Using the model-agnostic default `max_length` (=20) to control thegeneration length. We recommend setting `max_new_tokens` to control the maximum length of the generation.
+  warnings.warn(
+2024-03-29 11:14:58.045809: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-03-29 11:15:17.215943: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
