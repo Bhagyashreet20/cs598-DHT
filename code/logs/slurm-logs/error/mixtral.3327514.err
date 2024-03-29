@@ -1,0 +1,20 @@
+
+Currently Loaded Modules:
+  1) cue-login-env/1.0   4) gcc/11.4.0      7) anaconda3_cpu/23.7.4
+  2) slurm-env/0.1       5) openmpi/4.1.6
+  3) default-s11         6) python/3.7.17
+
+Inactive Modules:
+  1) cuda
+
+ 
+
+usage: conda [-h] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'activate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'token', 'verify', 'repo', 'server', 'env')
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+s3fs 2022.5.0 requires fsspec==2022.5.0, but you have fsspec 2024.3.1 which is incompatible.
+/u/btaleka/.local/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Downloading shards:   0%|          | 0/19 [00:00<?, ?it/s]Downloading shards:   5%|▌         | 1/19 [00:11<03:35, 11.95s/it]Downloading shards:  11%|█         | 2/19 [00:23<03:22, 11.91s/it]Downloading shards:  16%|█▌        | 3/19 [00:42<04:01, 15.08s/it]Downloading shards:  21%|██        | 4/19 [01:05<04:30, 18.05s/it]Downloading shards:  26%|██▋       | 5/19 [01:27<04:31, 19.39s/it]Downloading shards:  32%|███▏      | 6/19 [01:46<04:12, 19.44s/it]Downloading shards:  37%|███▋      | 7/19 [02:04<03:46, 18.89s/it]Downloading shards:  42%|████▏     | 8/19 [02:26<03:38, 19.89s/it]Downloading shards:  47%|████▋     | 9/19 [02:46<03:18, 19.84s/it]Downloading shards:  53%|█████▎    | 10/19 [03:07<03:01, 20.18s/it]Downloading shards:  58%|█████▊    | 11/19 [03:25<02:38, 19.77s/it]Downloading shards:  63%|██████▎   | 12/19 [03:48<02:23, 20.56s/it]Downloading shards:  68%|██████▊   | 13/19 [04:08<02:03, 20.61s/it]Downloading shards:  74%|███████▎  | 14/19 [04:32<01:46, 21.36s/it]Downloading shards:  79%|███████▉  | 15/19 [04:52<01:24, 21.16s/it]Downloading shards:  84%|████████▍ | 16/19 [05:10<01:00, 20.09s/it]Downloading shards:  89%|████████▉ | 17/19 [05:27<00:38, 19.17s/it]Downloading shards:  95%|█████████▍| 18/19 [05:48<00:19, 19.76s/it]Downloading shards: 100%|██████████| 19/19 [06:03<00:00, 18.26s/it]Downloading shards: 100%|██████████| 19/19 [06:03<00:00, 19.12s/it]
+Loading checkpoint shards:   0%|          | 0/19 [00:00<?, ?it/s]Loading checkpoint shards:   5%|▌         | 1/19 [00:27<08:13, 27.44s/it]Loading checkpoint shards:  11%|█         | 2/19 [00:48<06:41, 23.64s/it]Loading checkpoint shards:  16%|█▌        | 3/19 [01:06<05:38, 21.14s/it]Loading checkpoint shards:  21%|██        | 4/19 [01:32<05:48, 23.21s/it]Loading checkpoint shards:  26%|██▋       | 5/19 [01:58<05:34, 23.90s/it]Loading checkpoint shards:  32%|███▏      | 6/19 [02:22<05:12, 24.02s/it]Loading checkpoint shards:  37%|███▋      | 7/19 [02:51<05:07, 25.66s/it]Loading checkpoint shards:  42%|████▏     | 8/19 [03:16<04:40, 25.49s/it]Loading checkpoint shards:  47%|████▋     | 9/19 [03:33<03:48, 22.80s/it]Loading checkpoint shards:  53%|█████▎    | 10/19 [03:46<02:56, 19.66s/it]Loading checkpoint shards:  58%|█████▊    | 11/19 [04:01<02:28, 18.51s/it]Loading checkpoint shards:  63%|██████▎   | 12/19 [04:24<02:18, 19.82s/it]Loading checkpoint shards:  68%|██████▊   | 13/19 [04:52<02:14, 22.36s/it]slurmstepd: error: Detected 1 oom_kill event in StepId=3327514.0. Some of the step tasks have been OOM Killed.
+srun: error: cn068: task 0: Out Of Memory
