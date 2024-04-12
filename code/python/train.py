@@ -149,9 +149,9 @@ data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
 #seq2seq trainer
 training_args = Seq2SeqTrainingArguments(
-    output_dir="./trained",
+    output_dir="./trained/flan-t5-large",
     overwrite_output_dir=True,
-    num_train_epochs=5,
+    num_train_epochs=2,
     per_device_train_batch_size=8,
     save_steps=10_000,
     save_total_limit=2,
@@ -173,5 +173,5 @@ trainer = Seq2SeqTrainer(
 print("-------starting training-------")
 trainer.train()
 
-trainer.save_model("./trained/flan-t5-large_ep5")
+trainer.save_model("./trained/flan-t5-large_ep2")
 print("-------model saved-------")
