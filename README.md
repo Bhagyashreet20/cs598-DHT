@@ -26,7 +26,7 @@ This README provides instructions on how to run the `instruct_augmented_processe
 
 Before running the scripts, ensure you have the following prerequisites installed:
 
-- Python 3.6 or higher
+- Python 3.7 or higher
 - `openai` Python package
 - `nltk` Python package
 - `sentence-transformers` Python package
