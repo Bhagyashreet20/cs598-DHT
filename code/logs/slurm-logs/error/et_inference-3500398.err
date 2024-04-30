@@ -1,0 +1,1240 @@
+
+Inactive Modules:
+  1) cuda
+
+A conda environment has been detected CONDA_PREFIX=
+/u/ukakarla/.conda/envs/teachllms 
+anaconda3_gpu is loaded. Consider running conda deactivate and reloading it.
+
+Currently Loaded Modules:
+  1) cue-login-env/1.0   5) openmpi/4.1.6       9) cudnn/8.9.0.131
+  2) slurm-env/0.1       6) gcc-runtime/8.5.0  10) anaconda3_gpu/23.9.0
+  3) default-s11         7) readline/8.2
+  4) gcc/11.4.0          8) python/3.8.18
+
+Inactive Modules:
+  1) cuda
+
+ 
+
+usage: conda [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'activate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'repoquery', 'skeleton', 'repo', 'env', 'server', 'token', 'verify')
+INFO:teach.simulators.simulator_THOR:Time to create dataset definitions: 0.4076805114746094 sec
+INFO:teach.simulators.simulator_THOR:Initializing simulator... time to init Simulator_base: 0.5935671329498291 sec
+INFO:teach.simulators.simulator_THOR:Finished initializing simulator. Total time: 0.5936176776885986 sec
+INFO:teach.inference.et_model:ETModel using args Namespace(seed=4, device='cuda', model_dir='/projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest', checkpoint='latest.pth', object_predictor='/projects/bcng/ukakarla/teach_data/et_pretrained_models/pretrained/maskrcnn_model.pth', visual_checkpoint='/projects/bcng/ukakarla/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth', skip_edh_history=False, dout='/projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest')
+INFO:teach.inference.et_model:Loading model from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/latest.pth
+INFO:alfred.utils.data_util:Reading dataset info from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/params.json for model dir /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest
+INFO:alfred.utils.data_util:In load_vocab, loading vocab from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/data.vocab
+/sw/external/python/anaconda3_gpu/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/sw/external/python/anaconda3_gpu/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/sw/external/python/anaconda3_gpu/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained_backbone' is deprecated since 0.13 and may be removed in the future, please use 'weights_backbone' instead.
+  warnings.warn(
+/sw/external/python/anaconda3_gpu/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights_backbone' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights_backbone=None`.
+  warnings.warn(msg)
+INFO:alfred.nn.enc_visual:Loading RCNN checkpoint from /projects/bcng/ukakarla/teach_data/et_pretrained_models/pretrained/maskrcnn_model.pth
+INFO:teach.inference.et_model:gpu_count: 1
+INFO:teach.inference.et_model:Loading model agent using device: cuda:0
+INFO:alfred.utils.eval_util:In load_agent, model_path = /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/latest.pth, dataset_info = {'compress_type': '4x', 'feat_shape': [-1, 512, 7, 7], 'visual_archi': 'fasterrcnn', 'visual_checkpoint': '/projects/bcng/cs598-DHT/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth'}
+INFO:alfred.utils.model_util:Loading from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/latest.pth to cuda:0
+INFO:alfred.utils.data_util:Reading dataset info from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/params.json for model dir /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest
+/sw/external/python/anaconda3_gpu/lib/python3.9/site-packages/torch/nn/modules/transformer.py:282: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+INFO:alfred.nn.enc_visual:Loading RCNN checkpoint from /projects/bcng/ukakarla/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh11
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh11
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh11, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh11', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 1 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1a64715bba404da0_97fd.edh0
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1a64715bba404da0_97fd.edh0
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1a64715bba404da0_97fd.edh0, metrics: {'instance_id': '1a64715bba404da0_97fd.edh0', 'game_id': '1a64715bba404da0_97fd', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 2 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh13
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh13
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh13, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh13', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 3 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 0ad40b7b0e0cc45d_3a73.edh0
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=0ad40b7b0e0cc45d_3a73.edh0
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 0ad40b7b0e0cc45d_3a73.edh0, metrics: {'instance_id': '0ad40b7b0e0cc45d_3a73.edh0', 'game_id': '0ad40b7b0e0cc45d_3a73', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 4 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh9
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh9
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh9, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh9', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 5 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh7
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh7
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh7, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh7', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 6 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh1
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh1
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh1, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh1', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 7 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh12
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh12
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh12, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh12', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 8 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh8
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh8
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh8, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh8', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 9 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 0ad40b7b0e0cc45d_3a73.edh2
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=0ad40b7b0e0cc45d_3a73.edh2
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 0ad40b7b0e0cc45d_3a73.edh2, metrics: {'instance_id': '0ad40b7b0e0cc45d_3a73.edh2', 'game_id': '0ad40b7b0e0cc45d_3a73', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 10 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 0ad40b7b0e0cc45d_3a73.edh3
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=0ad40b7b0e0cc45d_3a73.edh3
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 0ad40b7b0e0cc45d_3a73.edh3, metrics: {'instance_id': '0ad40b7b0e0cc45d_3a73.edh3', 'game_id': '0ad40b7b0e0cc45d_3a73', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 11 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh5
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh5
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh5, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh5', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 12 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 0ffe9e170c5e7c8b_9118.edh1
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=0ffe9e170c5e7c8b_9118.edh1
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 0ffe9e170c5e7c8b_9118.edh1, metrics: {'instance_id': '0ffe9e170c5e7c8b_9118.edh1', 'game_id': '0ffe9e170c5e7c8b_9118', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 13 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh10
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh10
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh10, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh10', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 14 / 15 instances
+DEBUG:teach.utils:Creating task from state diff ...
+DEBUG:teach.inference.inference_runner_base:Processing instance 1c2df1e8ff105c52_6ac7.edh6
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+INFO:teach.simulators.simulator_base:Resetting dataset object and removing previously stored episodes...
+INFO:teach.inference.edh_inference_runner:Started episode replay with timeout: 500 sec
+INFO:teach.replay.episode_replay:Starting episode...
+INFO:teach.simulators.simulator_THOR:In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.start_new_episode, before __launch_simulator
+INFO:teach.simulators.simulator_THOR:In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+DEBUG:ai2thor.build:/u/ukakarla/.ai2thor/releases/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a/thor-Linux64-fdc047690ee0ab7a91ede50d286bd387d379713a exists - skipping download
+xdpyinfo:  unable to open display ":0.0".
+ERROR:teach.inference.inference_runner_base:Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh6
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+INFO:teach.inference.inference_runner_base:Instance 1c2df1e8ff105c52_6ac7.edh6, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh6', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+INFO:teach.inference.inference_runner_base:Process 0 completed 15 / 15 instances
+INFO:__main__:Time for inference: 0:04:18.403594
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/cli/inference.py", line 197, in <module>
+    main()
+  File "/projects/bcng/ukakarla/teach/src/teach/cli/inference.py", line 161, in main
+    results = aggregate_metrics(metrics, args)
+  File "/projects/bcng/ukakarla/teach/src/teach/eval/compute_metrics.py", line 88, in aggregate_metrics
+    pc = completed_goal_conditions / float(total_goal_conditions)
+ZeroDivisionError: float division by zero
+srun: error: gpua060: task 0: Exited with exit code 1

@@ -1,0 +1,24 @@
+
+Inactive Modules:
+  1) cuda
+
+A conda environment has been detected CONDA_PREFIX=
+/u/ukakarla/.conda/envs/teachllms 
+anaconda3_gpu is loaded. Consider running conda deactivate and reloading it.
+
+Activating Modules:
+  1) cuda/11.8.0
+
+
+Currently Loaded Modules:
+  1) cue-login-env/1.0   5) openmpi/4.1.6       9) cudnn/8.9.0.131
+  2) slurm-env/0.1       6) gcc-runtime/8.5.0  10) anaconda3_gpu/23.9.0
+  3) default-s11         7) readline/8.2       11) cuda/11.8.0
+  4) gcc/11.4.0          8) python/3.8.18
+
+ 
+
+usage: conda [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'activate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'repoquery', 'skeleton', 'server', 'env', 'verify', 'repo', 'token')
+/var/spool/slurmd/job3500584/slurm_script: line 58: Xvfb: command not found
+/usr/libexec/Xorg.wrap: Only console users are allowed to run the X server

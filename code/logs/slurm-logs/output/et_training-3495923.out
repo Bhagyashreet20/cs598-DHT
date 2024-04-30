@@ -1,0 +1,130 @@
+Retrieving notices: ...working... done
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ai2thor==3.1.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (3.1.0)
+Requirement already satisfied: boto3==1.24.27 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 2)) (1.24.27)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 3)) (0.18.0)
+Requirement already satisfied: networkx==2.5 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 4)) (2.5)
+Requirement already satisfied: pydub==0.24.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 5)) (0.24.1)
+Requirement already satisfied: python-Levenshtein in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 6)) (0.25.1)
+Requirement already satisfied: tqdm in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 7)) (4.65.0)
+Requirement already satisfied: pillow in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 8)) (9.4.0)
+Requirement already satisfied: pydantic==1.8.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 9)) (1.8.2)
+Requirement already satisfied: numpy in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 10)) (1.24.3)
+Requirement already satisfied: pandas in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 11)) (2.0.3)
+Requirement already satisfied: opencv-python in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 12)) (4.9.0.80)
+Requirement already satisfied: vocab in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 13)) (0.0.5)
+Requirement already satisfied: revtok in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 14)) (0.0.3)
+Requirement already satisfied: sacred in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (0.8.5)
+Requirement already satisfied: etaprogress in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 16)) (1.1.1)
+Requirement already satisfied: scikit-video in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 17)) (1.1.11)
+Requirement already satisfied: lmdb in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 18)) (1.4.1)
+Requirement already satisfied: gtimer in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 19)) (1.0.0b5)
+Requirement already satisfied: filelock in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 20)) (3.9.0)
+Requirement already satisfied: termcolor in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 21)) (1.1.0)
+Requirement already satisfied: tensorboardX==1.8 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 24)) (1.8)
+Requirement already satisfied: Flask==2.3.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (2.3.2)
+Requirement already satisfied: flask_restful==0.3.9 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 26)) (0.3.9)
+Requirement already satisfied: Werkzeug==3.0.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 27)) (3.0.1)
+Requirement already satisfied: Flask-Cors==3.0.9 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 28)) (3.0.9)
+Requirement already satisfied: Flask-SocketIO==4.3.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (4.3.1)
+Requirement already satisfied: flask_wtf==1.0.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 30)) (1.0.1)
+Requirement already satisfied: markupsafe in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 31)) (2.1.1)
+Requirement already satisfied: future in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 32)) (0.18.3)
+Requirement already satisfied: pandoc in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 33)) (2.3)
+Requirement already satisfied: six in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 34)) (1.16.0)
+Requirement already satisfied: typing in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 35)) (3.7.4.3)
+Requirement already satisfied: ConfigArgParse in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 36)) (1.7)
+Requirement already satisfied: protobuf==3.20.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 37)) (3.20.2)
+Requirement already satisfied: pyyaml in /sw/external/python/anaconda3/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (5.4.1)
+Requirement already satisfied: requests in /sw/external/python/anaconda3/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (2.31.0)
+Requirement already satisfied: progressbar2 in /u/ukakarla/.local/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (4.4.2)
+Requirement already satisfied: botocore in /sw/external/python/anaconda3/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (1.27.69)
+Requirement already satisfied: aws-requests-auth in /u/ukakarla/.local/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (0.4.3)
+Requirement already satisfied: msgpack in /sw/external/python/anaconda3/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (1.0.3)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from boto3==1.24.27->-r /projects/bcng/ukakarla/teach/requirements.txt (line 2)) (0.10.0)
+Requirement already satisfied: s3transfer<0.7.0,>=0.6.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from boto3==1.24.27->-r /projects/bcng/ukakarla/teach/requirements.txt (line 2)) (0.6.2)
+Requirement already satisfied: decorator>=4.3.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from networkx==2.5->-r /projects/bcng/ukakarla/teach/requirements.txt (line 4)) (5.1.1)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from pydantic==1.8.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 9)) (4.7.1)
+Requirement already satisfied: Jinja2>=3.1.2 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (3.1.2)
+Requirement already satisfied: itsdangerous>=2.1.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (2.2.0)
+Requirement already satisfied: click>=8.1.3 in /u/ukakarla/.local/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (8.1.7)
+Requirement already satisfied: blinker>=1.6.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (1.7.0)
+Requirement already satisfied: importlib-metadata>=3.6.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (6.0.0)
+Requirement already satisfied: aniso8601>=0.82 in /u/ukakarla/.local/lib/python3.9/site-packages (from flask_restful==0.3.9->-r /projects/bcng/ukakarla/teach/requirements.txt (line 26)) (9.0.1)
+Requirement already satisfied: pytz in /sw/external/python/anaconda3/lib/python3.9/site-packages (from flask_restful==0.3.9->-r /projects/bcng/ukakarla/teach/requirements.txt (line 26)) (2023.3.post1)
+Requirement already satisfied: python-socketio>=4.3.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (5.11.2)
+Requirement already satisfied: WTForms in /u/ukakarla/.local/lib/python3.9/site-packages (from flask_wtf==1.0.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 30)) (3.1.2)
+Requirement already satisfied: Levenshtein==0.25.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from python-Levenshtein->-r /projects/bcng/ukakarla/teach/requirements.txt (line 6)) (0.25.1)
+Requirement already satisfied: rapidfuzz<4.0.0,>=3.8.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from Levenshtein==0.25.1->python-Levenshtein->-r /projects/bcng/ukakarla/teach/requirements.txt (line 6)) (3.8.1)
+Requirement already satisfied: python-dateutil>=2.8.2 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from pandas->-r /projects/bcng/ukakarla/teach/requirements.txt (line 11)) (2.8.2)
+Requirement already satisfied: tzdata>=2022.1 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from pandas->-r /projects/bcng/ukakarla/teach/requirements.txt (line 11)) (2023.3)
+Requirement already satisfied: docopt<1.0,>=0.3 in /u/ukakarla/.local/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (0.6.2)
+Requirement already satisfied: jsonpickle>=2.2.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (3.0.4)
+Requirement already satisfied: munch<5.0,>=2.5 in /u/ukakarla/.local/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (4.0.0)
+Requirement already satisfied: wrapt<2.0,>=1.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (1.14.1)
+Requirement already satisfied: py-cpuinfo>=4.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (8.0.0)
+Requirement already satisfied: colorama>=0.4 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (0.4.6)
+Requirement already satisfied: packaging>=18.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (23.1)
+Requirement already satisfied: GitPython in /u/ukakarla/.local/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (3.1.43)
+Requirement already satisfied: scipy in /sw/external/python/anaconda3/lib/python3.9/site-packages (from scikit-video->-r /projects/bcng/ukakarla/teach/requirements.txt (line 17)) (1.8.1)
+Requirement already satisfied: plumbum in /u/ukakarla/.local/lib/python3.9/site-packages (from pandoc->-r /projects/bcng/ukakarla/teach/requirements.txt (line 33)) (1.8.2)
+Requirement already satisfied: ply in /sw/external/python/anaconda3/lib/python3.9/site-packages (from pandoc->-r /projects/bcng/ukakarla/teach/requirements.txt (line 33)) (3.11)
+Requirement already satisfied: urllib3<1.27,>=1.25.4 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from botocore->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (1.26.16)
+Requirement already satisfied: zipp>=0.5 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from importlib-metadata>=3.6.0->Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (3.11.0)
+Requirement already satisfied: bidict>=0.21.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (0.23.1)
+Requirement already satisfied: python-engineio>=4.8.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (4.9.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from requests->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (2.0.4)
+Requirement already satisfied: idna<4,>=2.5 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from requests->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from requests->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (2023.7.22)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from GitPython->sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (4.0.11)
+Requirement already satisfied: python-utils>=3.8.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from progressbar2->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (3.8.2)
+Requirement already satisfied: smmap<6,>=3.0.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from gitdb<5,>=4.0.1->GitPython->sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (5.0.1)
+Requirement already satisfied: simple-websocket>=0.10.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from python-engineio>=4.8.0->python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (1.0.0)
+Requirement already satisfied: wsproto in /u/ukakarla/.local/lib/python3.9/site-packages (from simple-websocket>=0.10.0->python-engineio>=4.8.0->python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (1.2.0)
+Requirement already satisfied: h11<1,>=0.9.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from wsproto->simple-websocket>=0.10.0->python-engineio>=4.8.0->python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (0.14.0)
+Environment variables set:
+PYTHONPATH=/projects/bcng/ukakarla/teach/src:/projects/bcng/ukakarla/teach/src/teach/modeling/ET:/projects/bcng/ukakarla/teach/src:/projects/bcng/ukakarla/teach/src/teach/modeling/ET:
+ET_DATA=/projects/bcng/cs598-DHT/teach_data
+ET_LOGS=/projects/bcng/cs598-DHT/teach_data/et_pretrained_models
+TEACH_ROOT_DIR=/projects/bcng/ukakarla/teach
+TEACH_SRC_DIR=/projects/bcng/ukakarla/teach/src
+ET_ROOT=/projects/bcng/ukakarla/teach/src/teach/modeling/ET
+Starting LMDB creation on gpua047.delta.ncsa.illinois.edu
+[MainThread-2063910-INFO] __main__: Train args: {'seed': 2, 'resume': True, 'profile': False, 'no_lang': False, 'no_vision': False, 'batch': 8, 'epochs': 3, 'optimizer': 'adamw', 'weight_decay': 0.33, 'lr': {'init': 0.0001, 'profile': 'linear', 'decay_epoch': 10, 'decay_scale': 0.1, 'final': 1e-05, 'cycle_epoch_up': 0, 'cycle_epoch_down': 0, 'warmup_epoch': 0, 'warmup_scale': 1}, 'action_loss_wt': 1.0, 'object_loss_wt': 1.0, 'subgoal_aux_loss_wt': 0, 'progress_aux_loss_wt': 0, 'entropy_wt': 0.0, 'compute_train_loss_over_history': False, 'demb': 768, 'encoder_heads': 12, 'encoder_layers': 2, 'num_input_actions': 1, 'encoder_lang': {'shared': True, 'layers': 2, 'pos_enc': True, 'instr_enc': False}, 'decoder_lang': {'layers': 2, 'heads': 12, 'demb': 768, 'dropout': 0.1, 'pos_enc': True}, 'detach_lang_emb': False, 'dropout': {'lang': 0.0, 'vis': 0.3, 'emb': 0.0, 'transformer': {'encoder': 0.1, 'action': 0.0}}, 'enc': {'pos': True, 'pos_learn': False, 'token': False, 'dataset': False}, 'use_alfred_weights': False, 'name': 'teach_et_trial_latest', 'model': 'transformer', 'device': 'cuda', 'num_workers': 12, 'pretrained_path': None, 'fast_epoch': False, 'lmdb_max_readers': 1, 'data': {'train': ['lmdb_edh'], 'valid': [], 'length': 30000, 'ann_type': ['lang'], 'train_load_type': 'shuffle'}, 'lang_pretrain_over_history_subgoals': False, 'dout': '/projects/bcng/cs598-DHT/teach_data/et_pretrained_models/teach_et_trial_latest'}
+[MainThread-2063910-INFO] alfred.data.zoo.base: Visual checkpoint for data preprocessing: /projects/bcng/cs598-DHT/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth
+[MainThread-2063910-INFO] alfred.data.zoo.base: train dataset size = 5475
+[MainThread-2063910-INFO] alfred.utils.data_util: In load_vocab, loading vocab from /projects/bcng/cs598-DHT/teach_data/lmdb_edh/data.vocab
+[MainThread-2063910-INFO] alfred.data.zoo.guides_edh: Loading object vocab from /projects/bcng/ukakarla/teach/src/teach/modeling/ET/files/obj_cls.vocab
+[MainThread-2063910-INFO] alfred.data.zoo.base: Visual checkpoint for data preprocessing: /projects/bcng/cs598-DHT/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth
+[MainThread-2063910-INFO] alfred.data.zoo.base: valid_seen dataset size = 608
+[MainThread-2063910-INFO] alfred.utils.data_util: In load_vocab, loading vocab from /projects/bcng/cs598-DHT/teach_data/lmdb_edh/data.vocab
+[MainThread-2063910-INFO] alfred.data.zoo.guides_edh: Loading object vocab from /projects/bcng/ukakarla/teach/src/teach/modeling/ET/files/obj_cls.vocab
+[MainThread-2063910-INFO] alfred.data.zoo.base: Visual checkpoint for data preprocessing: /projects/bcng/cs598-DHT/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth
+[MainThread-2063910-INFO] alfred.data.zoo.base: valid_unseen dataset size = 2149
+[MainThread-2063910-INFO] alfred.utils.data_util: In load_vocab, loading vocab from /projects/bcng/cs598-DHT/teach_data/lmdb_edh/data.vocab
+[MainThread-2063910-INFO] alfred.data.zoo.guides_edh: Loading object vocab from /projects/bcng/ukakarla/teach/src/teach/modeling/ET/files/obj_cls.vocab
+[MainThread-2063910-INFO] __main__: Parallelizing the model
+[MainThread-2063910-INFO] alfred.model.learned: Saving to: /projects/bcng/cs598-DHT/teach_data/et_pretrained_models/teach_et_trial_latest
+[MainThread-2063910-INFO] alfred.model.learned: Epoch 0/3
+[MainThread-2063910-INFO] alfred.model.learned: Saving models...
+[MainThread-2063910-INFO] alfred.model.learned: Computing train metrics...
+[MainThread-2063910-INFO] alfred.model.learned: Saving models...
+[MainThread-2063910-INFO] alfred.model.learned: Epoch 1/3
+[MainThread-2063910-INFO] alfred.model.learned: Saving models...
+[MainThread-2063910-INFO] alfred.model.learned: Computing train metrics...
+[MainThread-2063910-INFO] alfred.model.learned: Saving models...
+[MainThread-2063910-INFO] alfred.model.learned: Epoch 2/3
+[MainThread-2063910-INFO] alfred.model.learned: Saving models...
+[MainThread-2063910-INFO] alfred.model.learned: Computing train metrics...
+[MainThread-2063910-INFO] alfred.model.learned: Saving models...
+[MainThread-2063910-INFO] alfred.model.learned: 3 epochs are completed, all the models were saved to: /projects/bcng/cs598-DHT/teach_data/et_pretrained_models/teach_et_trial_latest

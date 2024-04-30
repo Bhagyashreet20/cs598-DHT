@@ -1,0 +1,1155 @@
+Retrieving notices: ...working... done
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ai2thor==3.1.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (3.1.0)
+Requirement already satisfied: boto3==1.24.27 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 2)) (1.24.27)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 3)) (0.18.0)
+Requirement already satisfied: networkx==2.5 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 4)) (2.5)
+Requirement already satisfied: pydub==0.24.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 5)) (0.24.1)
+Requirement already satisfied: python-Levenshtein in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 6)) (0.25.1)
+Requirement already satisfied: tqdm in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 7)) (4.65.0)
+Requirement already satisfied: pillow in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 8)) (9.4.0)
+Requirement already satisfied: pydantic==1.8.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 9)) (1.8.2)
+Requirement already satisfied: numpy in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 10)) (1.24.3)
+Requirement already satisfied: pandas in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 11)) (2.0.3)
+Requirement already satisfied: opencv-python in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 12)) (4.9.0.80)
+Requirement already satisfied: vocab in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 13)) (0.0.5)
+Requirement already satisfied: revtok in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 14)) (0.0.3)
+Requirement already satisfied: sacred in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (0.8.5)
+Requirement already satisfied: etaprogress in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 16)) (1.1.1)
+Requirement already satisfied: scikit-video in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 17)) (1.1.11)
+Requirement already satisfied: lmdb in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 18)) (1.4.1)
+Requirement already satisfied: gtimer in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 19)) (1.0.0b5)
+Requirement already satisfied: filelock in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 20)) (3.9.0)
+Requirement already satisfied: termcolor in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 21)) (1.1.0)
+Requirement already satisfied: tensorboardX==1.8 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 24)) (1.8)
+Requirement already satisfied: Flask==2.3.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (2.3.2)
+Requirement already satisfied: flask_restful==0.3.9 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 26)) (0.3.9)
+Requirement already satisfied: Werkzeug==3.0.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 27)) (3.0.1)
+Requirement already satisfied: Flask-Cors==3.0.9 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 28)) (3.0.9)
+Requirement already satisfied: Flask-SocketIO==4.3.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (4.3.1)
+Requirement already satisfied: flask_wtf==1.0.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 30)) (1.0.1)
+Requirement already satisfied: markupsafe in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 31)) (2.1.1)
+Requirement already satisfied: future in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 32)) (0.18.3)
+Requirement already satisfied: pandoc in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 33)) (2.3)
+Requirement already satisfied: six in /sw/external/python/anaconda3/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 34)) (1.16.0)
+Requirement already satisfied: typing in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 35)) (3.7.4.3)
+Requirement already satisfied: ConfigArgParse in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 36)) (1.7)
+Requirement already satisfied: protobuf==3.20.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from -r /projects/bcng/ukakarla/teach/requirements.txt (line 37)) (3.20.2)
+Requirement already satisfied: pyyaml in /sw/external/python/anaconda3/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (5.4.1)
+Requirement already satisfied: requests in /sw/external/python/anaconda3/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (2.31.0)
+Requirement already satisfied: progressbar2 in /u/ukakarla/.local/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (4.4.2)
+Requirement already satisfied: botocore in /sw/external/python/anaconda3/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (1.27.69)
+Requirement already satisfied: aws-requests-auth in /u/ukakarla/.local/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (0.4.3)
+Requirement already satisfied: msgpack in /sw/external/python/anaconda3/lib/python3.9/site-packages (from ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (1.0.3)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from boto3==1.24.27->-r /projects/bcng/ukakarla/teach/requirements.txt (line 2)) (0.10.0)
+Requirement already satisfied: s3transfer<0.7.0,>=0.6.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from boto3==1.24.27->-r /projects/bcng/ukakarla/teach/requirements.txt (line 2)) (0.6.2)
+Requirement already satisfied: decorator>=4.3.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from networkx==2.5->-r /projects/bcng/ukakarla/teach/requirements.txt (line 4)) (5.1.1)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from pydantic==1.8.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 9)) (4.7.1)
+Requirement already satisfied: Jinja2>=3.1.2 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (3.1.2)
+Requirement already satisfied: itsdangerous>=2.1.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (2.2.0)
+Requirement already satisfied: click>=8.1.3 in /u/ukakarla/.local/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (8.1.7)
+Requirement already satisfied: blinker>=1.6.2 in /u/ukakarla/.local/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (1.7.0)
+Requirement already satisfied: importlib-metadata>=3.6.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (6.0.0)
+Requirement already satisfied: aniso8601>=0.82 in /u/ukakarla/.local/lib/python3.9/site-packages (from flask_restful==0.3.9->-r /projects/bcng/ukakarla/teach/requirements.txt (line 26)) (9.0.1)
+Requirement already satisfied: pytz in /sw/external/python/anaconda3/lib/python3.9/site-packages (from flask_restful==0.3.9->-r /projects/bcng/ukakarla/teach/requirements.txt (line 26)) (2023.3.post1)
+Requirement already satisfied: python-socketio>=4.3.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (5.11.2)
+Requirement already satisfied: WTForms in /u/ukakarla/.local/lib/python3.9/site-packages (from flask_wtf==1.0.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 30)) (3.1.2)
+Requirement already satisfied: Levenshtein==0.25.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from python-Levenshtein->-r /projects/bcng/ukakarla/teach/requirements.txt (line 6)) (0.25.1)
+Requirement already satisfied: rapidfuzz<4.0.0,>=3.8.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from Levenshtein==0.25.1->python-Levenshtein->-r /projects/bcng/ukakarla/teach/requirements.txt (line 6)) (3.8.1)
+Requirement already satisfied: python-dateutil>=2.8.2 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from pandas->-r /projects/bcng/ukakarla/teach/requirements.txt (line 11)) (2.8.2)
+Requirement already satisfied: tzdata>=2022.1 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from pandas->-r /projects/bcng/ukakarla/teach/requirements.txt (line 11)) (2023.3)
+Requirement already satisfied: docopt<1.0,>=0.3 in /u/ukakarla/.local/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (0.6.2)
+Requirement already satisfied: jsonpickle>=2.2.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (3.0.4)
+Requirement already satisfied: munch<5.0,>=2.5 in /u/ukakarla/.local/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (4.0.0)
+Requirement already satisfied: wrapt<2.0,>=1.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (1.14.1)
+Requirement already satisfied: py-cpuinfo>=4.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (8.0.0)
+Requirement already satisfied: colorama>=0.4 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (0.4.6)
+Requirement already satisfied: packaging>=18.0 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (23.1)
+Requirement already satisfied: GitPython in /u/ukakarla/.local/lib/python3.9/site-packages (from sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (3.1.43)
+Requirement already satisfied: scipy in /sw/external/python/anaconda3/lib/python3.9/site-packages (from scikit-video->-r /projects/bcng/ukakarla/teach/requirements.txt (line 17)) (1.8.1)
+Requirement already satisfied: plumbum in /u/ukakarla/.local/lib/python3.9/site-packages (from pandoc->-r /projects/bcng/ukakarla/teach/requirements.txt (line 33)) (1.8.2)
+Requirement already satisfied: ply in /sw/external/python/anaconda3/lib/python3.9/site-packages (from pandoc->-r /projects/bcng/ukakarla/teach/requirements.txt (line 33)) (3.11)
+Requirement already satisfied: urllib3<1.27,>=1.25.4 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from botocore->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (1.26.16)
+Requirement already satisfied: zipp>=0.5 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from importlib-metadata>=3.6.0->Flask==2.3.2->-r /projects/bcng/ukakarla/teach/requirements.txt (line 25)) (3.11.0)
+Requirement already satisfied: bidict>=0.21.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (0.23.1)
+Requirement already satisfied: python-engineio>=4.8.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (4.9.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from requests->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (2.0.4)
+Requirement already satisfied: idna<4,>=2.5 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from requests->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in /sw/external/python/anaconda3/lib/python3.9/site-packages (from requests->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (2023.7.22)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from GitPython->sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (4.0.11)
+Requirement already satisfied: python-utils>=3.8.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from progressbar2->ai2thor==3.1.0->-r /projects/bcng/ukakarla/teach/requirements.txt (line 1)) (3.8.2)
+Requirement already satisfied: smmap<6,>=3.0.1 in /u/ukakarla/.local/lib/python3.9/site-packages (from gitdb<5,>=4.0.1->GitPython->sacred->-r /projects/bcng/ukakarla/teach/requirements.txt (line 15)) (5.0.1)
+Requirement already satisfied: simple-websocket>=0.10.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from python-engineio>=4.8.0->python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (1.0.0)
+Requirement already satisfied: wsproto in /u/ukakarla/.local/lib/python3.9/site-packages (from simple-websocket>=0.10.0->python-engineio>=4.8.0->python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (1.2.0)
+Requirement already satisfied: h11<1,>=0.9.0 in /u/ukakarla/.local/lib/python3.9/site-packages (from wsproto->simple-websocket>=0.10.0->python-engineio>=4.8.0->python-socketio>=4.3.0->Flask-SocketIO==4.3.1->-r /projects/bcng/ukakarla/teach/requirements.txt (line 29)) (0.14.0)
+Environment variables set:
+PYTHONPATH=/projects/bcng/ukakarla/teach/src:/projects/bcng/ukakarla/teach/src/teach/modeling/ET:/projects/bcng/ukakarla/teach/src:/projects/bcng/ukakarla/teach/src/teach/modeling/ET:
+ET_DATA=/projects/bcng/ukakarla/teach_data
+ET_LOGS=/projects/bcng/ukakarla/teach_data/et_pretrained_models
+TEACH_ROOT_DIR=/projects/bcng/ukakarla/teach
+TEACH_SRC_DIR=/projects/bcng/ukakarla/teach/src
+ET_ROOT=/projects/bcng/ukakarla/teach/src/teach/modeling/ET
+Running inference
+[MainThread-946955-INFO] teach.simulators.simulator_THOR: Time to create dataset definitions: 0.4076805114746094 sec
+[MainThread-946955-INFO] teach.simulators.simulator_THOR: Time to create dataset definitions: 0.4076805114746094 sec
+[MainThread-946955-INFO] teach.simulators.simulator_THOR: Initializing simulator... time to init Simulator_base: 0.5935671329498291 sec
+[MainThread-946955-INFO] teach.simulators.simulator_THOR: Initializing simulator... time to init Simulator_base: 0.5935671329498291 sec
+[MainThread-946955-INFO] teach.simulators.simulator_THOR: Finished initializing simulator. Total time: 0.5936176776885986 sec
+[MainThread-946955-INFO] teach.simulators.simulator_THOR: Finished initializing simulator. Total time: 0.5936176776885986 sec
+[MainThread-947311-INFO] teach.inference.et_model: ETModel using args Namespace(seed=4, device='cuda', model_dir='/projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest', checkpoint='latest.pth', object_predictor='/projects/bcng/ukakarla/teach_data/et_pretrained_models/pretrained/maskrcnn_model.pth', visual_checkpoint='/projects/bcng/ukakarla/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth', skip_edh_history=False, dout='/projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest')
+[MainThread-947311-INFO] teach.inference.et_model: Loading model from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/latest.pth
+[MainThread-947311-INFO] alfred.utils.data_util: Reading dataset info from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/params.json for model dir /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest
+[MainThread-947311-INFO] alfred.utils.data_util: In load_vocab, loading vocab from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/data.vocab
+[MainThread-947311-INFO] alfred.nn.enc_visual: Loading RCNN checkpoint from /projects/bcng/ukakarla/teach_data/et_pretrained_models/pretrained/maskrcnn_model.pth
+[MainThread-947311-INFO] teach.inference.et_model: gpu_count: 1
+[MainThread-947311-INFO] teach.inference.et_model: Loading model agent using device: cuda:0
+[MainThread-947311-INFO] alfred.utils.eval_util: In load_agent, model_path = /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/latest.pth, dataset_info = {'compress_type': '4x', 'feat_shape': [-1, 512, 7, 7], 'visual_archi': 'fasterrcnn', 'visual_checkpoint': '/projects/bcng/cs598-DHT/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth'}
+[MainThread-947311-INFO] alfred.utils.model_util: Loading from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/latest.pth to cuda:0
+[MainThread-947311-INFO] alfred.utils.data_util: Reading dataset info from /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest/params.json for model dir /projects/bcng/ukakarla/teach_data/et_pretrained_models/teach_et_trial_latest
+[MainThread-947311-INFO] alfred.nn.enc_visual: Loading RCNN checkpoint from /projects/bcng/ukakarla/teach_data/et_pretrained_models/pretrained/fasterrcnn_model.pth
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh11
+[ThreadPoolExecutor-0_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-0_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-0_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-0_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-0_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-1_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-1_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-1_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-1_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-1_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-2_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-2_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-2_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-2_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-2_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-3_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-3_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-3_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-3_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-3_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-4_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-4_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-4_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-4_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-4_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh11
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh11, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh11', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 1 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1a64715bba404da0_97fd.edh0
+[ThreadPoolExecutor-5_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-5_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-5_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+[ThreadPoolExecutor-5_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-5_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-6_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-6_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-6_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+[ThreadPoolExecutor-6_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-6_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-7_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-7_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-7_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+[ThreadPoolExecutor-7_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-7_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-8_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-8_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-8_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+[ThreadPoolExecutor-8_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-8_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-9_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-9_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-9_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan23_physics world_type = None
+[ThreadPoolExecutor-9_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-9_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1a64715bba404da0_97fd.edh0
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1a64715bba404da0_97fd.edh0, metrics: {'instance_id': '1a64715bba404da0_97fd.edh0', 'game_id': '1a64715bba404da0_97fd', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 2 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh13
+[ThreadPoolExecutor-10_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-10_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-10_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-10_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-10_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-11_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-11_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-11_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-11_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-11_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-12_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-12_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-12_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-12_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-12_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-13_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-13_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-13_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-13_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-13_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-14_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-14_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-14_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-14_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-14_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh13
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh13, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh13', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 3 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 0ad40b7b0e0cc45d_3a73.edh0
+[ThreadPoolExecutor-15_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-15_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-15_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-15_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-15_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-16_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-16_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-16_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-16_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-16_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-17_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-17_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-17_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-17_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-17_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-18_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-18_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-18_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-18_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-18_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-19_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-19_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-19_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-19_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-19_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=0ad40b7b0e0cc45d_3a73.edh0
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 0ad40b7b0e0cc45d_3a73.edh0, metrics: {'instance_id': '0ad40b7b0e0cc45d_3a73.edh0', 'game_id': '0ad40b7b0e0cc45d_3a73', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 4 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh9
+[ThreadPoolExecutor-20_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-20_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-20_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-20_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-20_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-21_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-21_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-21_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-21_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-21_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-22_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-22_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-22_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-22_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-22_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-23_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-23_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-23_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-23_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-23_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-24_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-24_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-24_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-24_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-24_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh9
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh9, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh9', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 5 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh7
+[ThreadPoolExecutor-25_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-25_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-25_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-25_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-25_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-26_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-26_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-26_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-26_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-26_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-27_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-27_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-27_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-27_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-27_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-28_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-28_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-28_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-28_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-28_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-29_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-29_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-29_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-29_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-29_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh7
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh7, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh7', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 6 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh1
+[ThreadPoolExecutor-30_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-30_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-30_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-30_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-30_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-31_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-31_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-31_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-31_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-31_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-32_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-32_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-32_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-32_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-32_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-33_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-33_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-33_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-33_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-33_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-34_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-34_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-34_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-34_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-34_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh1
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh1, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh1', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 7 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh12
+[ThreadPoolExecutor-35_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-35_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-35_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-35_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-35_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-36_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-36_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-36_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-36_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-36_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-37_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-37_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-37_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-37_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-37_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-38_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-38_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-38_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-38_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-38_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-39_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-39_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-39_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-39_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-39_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh12
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh12, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh12', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 8 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh8
+[ThreadPoolExecutor-40_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-40_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-40_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-40_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-40_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-41_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-41_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-41_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-41_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-41_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-42_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-42_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-42_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-42_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-42_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-43_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-43_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-43_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-43_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-43_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-44_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-44_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-44_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-44_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-44_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh8
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh8, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh8', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 9 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 0ad40b7b0e0cc45d_3a73.edh2
+[ThreadPoolExecutor-45_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-45_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-45_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-45_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-45_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-46_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-46_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-46_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-46_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-46_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-47_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-47_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-47_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-47_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-47_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-48_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-48_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-48_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-48_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-48_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-49_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-49_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-49_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-49_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-49_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=0ad40b7b0e0cc45d_3a73.edh2
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 0ad40b7b0e0cc45d_3a73.edh2, metrics: {'instance_id': '0ad40b7b0e0cc45d_3a73.edh2', 'game_id': '0ad40b7b0e0cc45d_3a73', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 10 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 0ad40b7b0e0cc45d_3a73.edh3
+[ThreadPoolExecutor-50_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-50_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-50_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-50_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-50_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-51_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-51_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-51_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-51_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-51_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-52_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-52_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-52_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-52_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-52_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-53_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-53_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-53_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-53_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-53_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-54_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-54_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-54_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan26_physics world_type = None
+[ThreadPoolExecutor-54_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-54_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=0ad40b7b0e0cc45d_3a73.edh3
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 0ad40b7b0e0cc45d_3a73.edh3, metrics: {'instance_id': '0ad40b7b0e0cc45d_3a73.edh3', 'game_id': '0ad40b7b0e0cc45d_3a73', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 11 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh5
+[ThreadPoolExecutor-55_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-55_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-55_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-55_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-55_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-56_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-56_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-56_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-56_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-56_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-57_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-57_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-57_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-57_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-57_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-58_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-58_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-58_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-58_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-58_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-59_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-59_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-59_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-59_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-59_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh5
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh5, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh5', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 12 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 0ffe9e170c5e7c8b_9118.edh1
+[ThreadPoolExecutor-60_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-60_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-60_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+[ThreadPoolExecutor-60_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-60_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-61_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-61_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-61_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+[ThreadPoolExecutor-61_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-61_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-62_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-62_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-62_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+[ThreadPoolExecutor-62_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-62_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-63_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-63_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-63_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+[ThreadPoolExecutor-63_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-63_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-64_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-64_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-64_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan403_physics world_type = None
+[ThreadPoolExecutor-64_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-64_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=0ffe9e170c5e7c8b_9118.edh1
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 0ffe9e170c5e7c8b_9118.edh1, metrics: {'instance_id': '0ffe9e170c5e7c8b_9118.edh1', 'game_id': '0ffe9e170c5e7c8b_9118', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 13 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh10
+[ThreadPoolExecutor-65_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-65_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-65_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-65_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-65_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-66_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-66_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-66_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-66_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-66_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-67_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-67_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-67_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-67_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-67_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-68_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-68_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-68_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-68_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-68_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-69_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-69_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-69_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-69_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-69_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh10
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh10, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh10', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 14 / 15 instances
+[MainThread-947311-DEBUG] teach.utils: Creating task from state diff ...
+[MainThread-947311-DEBUG] teach.inference.inference_runner_base: Processing instance 1c2df1e8ff105c52_6ac7.edh6
+[ThreadPoolExecutor-70_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-70_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-70_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-70_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-70_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-71_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-71_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-71_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-71_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-71_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-72_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-72_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-72_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-72_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-72_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-73_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-73_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-73_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-73_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-73_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[ThreadPoolExecutor-74_0-947311-INFO] teach.simulators.simulator_base: Resetting dataset object and removing previously stored episodes...
+[MainThread-947311-INFO] teach.inference.edh_inference_runner: Started episode replay with timeout: 500 sec
+[ThreadPoolExecutor-74_0-947311-INFO] teach.replay.episode_replay: Starting episode...
+[ThreadPoolExecutor-74_0-947311-INFO] teach.simulators.simulator_THOR: In simulator_THOR.start_new_episode, world = FloorPlan7_physics world_type = None
+[ThreadPoolExecutor-74_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.start_new_episode, before __launch_simulator
+[ThreadPoolExecutor-74_0-947311-INFO] teach.simulators.simulator_THOR: In SimulatorTHOR.__launch_simulator, creating ai2thor controller (unity process)
+[MainThread-947311-ERROR] teach.inference.inference_runner_base: Failed to initialize episode replay for instance=1c2df1e8ff105c52_6ac7.edh6
+Traceback (most recent call last):
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 165, in _run_instance
+    init_success, er = with_retry(
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 380, in with_retry
+    raise last_exception
+  File "/projects/bcng/ukakarla/teach/src/teach/utils.py", line 369, in with_retry
+    output = fn()
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/inference_runner_base.py", line 166, in <lambda>
+    fn=lambda: self._initialize_episode_replay(instance, game_file, check_task,
+  File "/projects/bcng/ukakarla/teach/src/teach/inference/edh_inference_runner.py", line 73, in _initialize_episode_replay
+    init_success, _ = future.result(timeout=replay_timeout)
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/sw/external/python/anaconda3_gpu/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 83, in play_episode
+    api_success, init_state = self.set_up_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/replay/episode_replay.py", line 371, in set_up_new_episode
+    self.simulator.start_new_episode(
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 423, in start_new_episode
+    self.__launch_simulator(world=world, world_type=world_type)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 2369, in __launch_simulator
+    self.controller = TEAChController(**init_params)
+  File "/projects/bcng/ukakarla/teach/src/teach/simulators/simulator_THOR.py", line 43, in __init__
+    super().__init__(**kwargs)
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 450, in __init__
+    self.start(
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 1169, in start
+    self.check_x_display(env["DISPLAY"])
+  File "/u/ukakarla/.local/lib/python3.9/site-packages/ai2thor/controller.py", line 967, in check_x_display
+    assert (
+AssertionError: Invalid DISPLAY :0.0 - cannot find X server with xdpyinfo
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Instance 1c2df1e8ff105c52_6ac7.edh6, metrics: {'instance_id': '1c2df1e8ff105c52_6ac7.edh6', 'game_id': '1c2df1e8ff105c52_6ac7', 'completed_goal_conditions': 0, 'total_goal_conditions': 0, 'goal_condition_success': 0.0, 'success_spl': 0.0, 'path_len_weighted_success_spl': 0.0, 'goal_condition_spl': 0.0, 'path_len_weighted_goal_condition_spl': 0.0, 'gt_path_len': 0, 'reward': 0.0, 'success': 0, 'traj_len': 0, 'predicted_stop': 0, 'num_api_fails': 0, 'error': 0, 'init_success': False, 'pred_actions': []}
+[MainThread-947311-INFO] teach.inference.inference_runner_base: Process 0 completed 15 / 15 instances
+[MainThread-946955-INFO] __main__: Time for inference: 0:04:18.403594
