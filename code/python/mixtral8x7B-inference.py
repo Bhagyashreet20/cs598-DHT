@@ -1,15 +1,20 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer,BitsAndBytesConfig
-import torch 
 import json
 
+import re
+import os
 
+from groq import Groq
+import time
 
+#client = OpenAI()
 
-model_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
-model_path = "/scratch/bcng/cs598-DHT/models"
+client = Groq()
+
+'''
+Assumes teach-dataset is already in place and have access to train dataset instances. replace the path accordingly
+'''
 dataset_path ='/projects/bcng/cs598-DHT/teach_data/edh_instances/processed_data.json'
 train_set = '/projects/bcng/cs598-DHT/teach_data/edh_instances/train/'
-val_set = '/projects/bcng/cs598-DHT/teach_data/edh_instances/val_seen/'
 
 
 def gen_prompt(instruction,objects):
@@ -33,17 +38,23 @@ def gen_prompt(instruction,objects):
                                       Please note the following:
                                       1. Actions like Pickup, Place, Open, Close etc will be associated with objects and remaining actions will not have objects associated with them, In such cases output only the action in the predicted sequence
                                       2. Strictly adhere to the given format and generate ONLY the predicted sequence and do not explain the answer.
+                                      3. you must generate action sequence as list of strings delimited by comma like this : [‘Pickup Newspaper', 'Turn Right', 'Place CoffeeTable', 'Turn Left', 'Forward', 'Forward', 'Pan Left', 'Pickup Newspaper', 'Turn Right', 'Place CoffeeTable'] 
 
                                         '''},
-        {"role": "user", "content": f'''Please predict the action sequence for the given command. Some examples are :
-                                        "For the command 'please put the two newspapers from the self onto a single table', the predicted action sequence were: [‘Pickup Newspaper', 'Turn Right', 'Place CoffeeTable', 'Turn Left', 'Forward', 'Forward', 'Pan Left', 'Pickup Newspaper', 'Turn Right', 'Place CoffeeTable']. " 
 
-                                        "For the command 'make 2 slices of lettuce', the predicted action sequence were: ['Turn Right', 'Turn Right', 'Turn Right', 'Turn Right', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Open Fridge', 'Pan Left', 'Forward', 'Forward', 'Forward', 'Pickup Lettuce', 'Turn Left', 'Turn Left', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Turn Right', 'Pan Left', 'Pan Left', 'Turn Left', 'Place CounterTop']. "
+
+        {"role":"user","content":f'''    Please predict the action sequence for the given command. Some examples are :
+                                        "For the command 'please put the two newspapers from the self onto a single table', the predicted action sequence were: [‘Pickup Newspaper', 'Turn Right', 'Place CoffeeTable', 'Turn Left', 'Forward', 'Forward', 'Pan Left', 'Pickup Newspaper', 'Turn Right', 'Place CoffeeTable']" 
+
+                                        "For the command 'make 2 slices of lettuce', the predicted action sequence were: ['Turn Right', 'Turn Right', 'Turn Right', 'Turn Right', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Open Fridge', 'Pan Left', 'Forward', 'Forward', 'Forward', 'Pickup Lettuce', 'Turn Left', 'Turn Left', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Turn Right', 'Pan Left', 'Pan Left', 'Turn Left', 'Place CounterTop']"
                                         Now, please predict the following sequence.
                                         "For the command '{instruction}',  the predicted sequence of actions was: "
-                                        '''},
-       
-    ]
+
+'''} ]
+   
+
+
+
 
     return messages
 
@@ -53,57 +64,116 @@ def gen_object_list(filename):
         data = json.load(file)
 
     objects = data.get("init_state_diff", {}).get("objects", {})
-    object_str = ''
+    object_list= set()
     for object_name, attributes in objects.items():
             object_type, *coordinates = object_name.split('|')
-            object_str += object_type + " "
+            object_list.add(object_type)
             if 'receptacleObjectIds' in attributes:
                 for receptacle_object in attributes['receptacleObjectIds']:
                     receptacle_object_type, *receptacle_coordinates = receptacle_object.split('|')
-                    object_str += receptacle_object_type + " "
-    return object_str
+                    object_list.add(object_type)
+    return list(object_list)
+
+def convert_to_list(action_string):
+    # Trim the single quotes if they exist at the start and end of the string
+    if action_string.startswith("'") and action_string.endswith("'"):
+        action_string = action_string[1:-1]
+    
+    # Split the string on comma to form a list
+    actions = action_string.split(", ")
+    
+    # Strip extra white spaces and quotes from each action
+    actions = [action.strip('"') for action in actions]
+    
+    return actions
 
 
 
+def format_response(text):
+    #match = re.search(r'\[(.*?)\]', text)
+    match = re.search(r'(\[.*?\])', text)
+    if match:
+        text=match.group(1)
+        text= text.replace("'",'"')
+        return json.loads(text) # This returns the content within the first pair of brackets found
+    elif ',' in text:
+        text=text.split(',')
+        return text
+    
+    return None 
 
-print("loading tokenizer")
-tokenizer = AutoTokenizer.from_pretrained(model_id, cache_dir = model_path)
+def get_action_sequence(messages,count=1):
+        request_counter = 0  # Initialize a counter to track the number of requests
+        action_sequences=[]
+        
+        for i in range(count):
+            try:
+                if request_counter >= 3:  # Check if 50 requests have been made
+                    time.sleep(30)  # Sleep for 20 seconds
+                    request_counter = 0  # Reset the counter
+                response = client.chat.completions.create(
+                    model="mixtral-8x7b-32768",
+                    messages=messages,
+                    temperature=0.5,
+                    top_p=1,
+                    stop=None,
+                )
+             
+                # action_sequence = convert_to_list(response.choices[0].message.content)
+                print("response",response.choices[0].message.content,type(response.choices[0].message.content))
+                action_sequence= format_response(response.choices[0].message.content)
+                print("formatted-action_sequence",action_sequence,"type", type(action_sequence))
+             
+                # print(prompt, paraphrase)
+                action_sequences.append(action_sequence)
+                request_counter += 1 
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print("device is",device)
+            except Exception as e:
+                print(f"Groq API returned an error: {e}")
 
+                return None
+        #print(action_sequences)
+        return action_sequences
 
+def main():
+    with open(dataset_path, 'r') as file:
+            data = json.load(file)
+    count=1
+    checkpoint_interval = 10
+    for file_key, content in data.items():
+        print(f'processing file:{file_key}',"file count", count)
+        for step, details in content.items():
+            if "augmented_actions" not in data[file_key][step]:
+                    
+                instruction = details['instruction']
+                print(f"running model inference for:{instruction}")
+                objects = gen_object_list(file_key)
+                messages = gen_prompt(instruction,objects)
+            
+                action_sequences = get_action_sequence(messages)
+                if action_sequences is None:
+                    break
+                data[file_key][step]["augmented_actions"] = action_sequences
+                print(f"Generated text for instruction:{instruction} is : {action_sequences}")
+                print("count",count)
+                if count % checkpoint_interval == 0:
+                    # Save a checkpoint
+                    with open(f"./checkpoints/checkpoint_{count}.json", "w") as f_out:
+                        json.dump(data, f_out, indent=4)
+                    print("Checkpoint saved.")
+        #         if count==10:
+        #              break
 
-quantization_config = BitsAndBytesConfig(load_in_8bit=True,bnb_8bit_compute_dtype=torch.float16)
-print("quantized_config loaded")
+        
 
-
-print("loading model")
-model = AutoModelForCausalLM.from_pretrained(model_id,device_map="auto",cache_dir = model_path, quantization_config=quantization_config)
-
-
-
-
-
+        # if count==10:
+        #      break
+        
+        count+=1
+    with open('final_dataset.json', "w") as f_out:
+           json.dump(data, f_out, indent=4)
     
 
-with open(dataset_path, 'r') as file:
-    data = json.load(file)
 
-count=1
-for file_key, content in data.items():
-    print(f'processing file:{file_key}')
-    for step, details in content.items():
-        instruction = details['instruction']
-        print(f"running model inference for:{instruction}")
-        objects = gen_object_list(file_key)
-        messages = gen_prompt(instruction,objects)
-        inputs = tokenizer.apply_chat_template(messages, return_tensors="pt")
-        inputs = inputs.to(device)
-        outputs = model.generate(inputs, max_new_tokens=250)
-        result=tokenizer.decode(outputs[0], skip_special_tokens=True)
-        print(f"Generated text for instruction:{instruction} is : {result}")
-
-        if count==1:
-            break
-        #TODO:now need to write the resutl to a json and store it
+if __name__ == "__main__":
+    main()
