@@ -16,6 +16,99 @@ The motivation behind this project is to overcome the constraints of data scarci
 
 We utilize the TEACh benchmark dataset for task-oriented dialogues in simulated environments. This dataset includes dialogues that capture human interactions and task completions within these environments, providing a foundation for training and evaluating our models.
 
+## Dataset Preparation
+
+To work with the TEACh dataset, follow these steps:
+
+1. Download the dataset using the provided script:
+
+```bash
+teach_download
+```
+
+This script will download and extract the necessary files into the default directory `/tmp/teach-dataset`.
+
+2. Set up the environment variables to point to the dataset and other important paths:
+
+```bash
+export ET_DATA=/path/to/teach-dataset
+export TEACH_ROOT_DIR=/path/to/teach/repo
+export ET_LOGS=/path/to/store/checkpoints
+export VENV_DIR=/path/to/folder/to/store/venv
+export TEACH_SRC_DIR=$TEACH_ROOT_DIR/src
+export ET_ROOT=$TEACH_SRC_DIR/guides/modeling/ET
+export INFERENCE_OUTPUT_PATH=/path/to/store/inference/execution/files
+```
+
+3. Create a virtual environment and install the required dependencies:
+
+```bash
+python3 -m venv $VENV_DIR/teach_env
+source $VENV_DIR/teach_env/bin/activate
+cd $TEACH_ROOT_DIR
+pip install --upgrade pip
+pip install -r requirements.txt
+export PYTHONPATH=$TEACH_SRC_DIR:$ET_ROOT:$PYTHONPATH
+```
+
+4. Download the E.T. pretrained checkpoints:
+
+```bash
+wget http://pascal.inrialpes.fr/data2/apashevi/et_checkpoints.zip
+unzip et_checkpoints.zip
+mv pretrained $ET_LOGS/
+rm et_checkpoints.zip
+```
+
+If the above link doesn't work, you can try this Google drive link to download the checkpoints directly: [google drive](https://drive.google.com/file/d/1RyXDsVKdx4P0i6OQQH2vYTkq-1tQI71z/view?usp=sharing)
+
+5. Preprocess the data to extract image features and process EDH jsons:
+
+```bash
+python -m alfred.data.create_lmdb \
+with args.visual_checkpoint=$ET_LOGS/pretrained/fasterrcnn_model.pth \
+args.data_input=edh_instances \
+args.task_type=edh \
+args.data_output=lmdb_edh \
+args.vocab_path=None
+```
+
+For doing this we are using the Slurm script : `code/slurm-scripts/create_lmdb.slurm` and running it on NCSA Delta Cluster. On the cluster, you can run the Slurm script using this command:
+
+```bash
+sbatch slurm-scripts/create_lmdb.slurm
+```
+
+### Training the E.T. Model
+
+To train the E.T. model on the TEACh dataset, we use the `train_et_model.slurm` SLURM script. This script sets up the necessary environment, loads the required modules, and executes the training command. It also specifies the computational resources needed for the job, such as memory, GPUs, and runtime.
+
+The training process is logged, and the output can be found in the specified log directory. The script will train the model for a specified number of epochs and save the checkpoints to the designated logs directory.
+
+To start the training, submit the SLURM script to your cluster's scheduler:
+
+```bash
+sbatch slurm-scripts/train_et_model.slurm
+```
+
+### Evaluating the Model
+
+After training, the model's performance can be evaluated using the `run_inference.slurm` SLURM script. This script will run the inference command that loads the trained model and evaluates it on the validation set. It will output the inference results and metrics to the specified output path.
+
+To run the evaluation, submit the SLURM script to your cluster's scheduler:
+
+```bash
+sbatch slurm-scripts/run_inference.slurm
+```
+
+The inference results will include various performance metrics that are saved to a JSON file. These metrics provide insights into the model's ability to generate sequences of actions that are contextually relevant and feasible within the simulated environment.
+
+#### Additional Notes
+
+- The SLURM scripts are configured for a specific cluster setup. You may need to modify the resource specifications and module loading commands to match your cluster's configuration.
+- Ensure that the paths specified in the environment variables and SLURM scripts match the actual locations of your dataset, checkpoints, and output directories.
+- Monitor the progress of your SLURM jobs using the `squeue` command and check the output and error logs for any issues that may arise during training or inference.
+
 ## Experiments
 
 ### Instruction Paraphrasing and Quality Metrics Evaluation
@@ -78,6 +171,8 @@ python instruct_augmented_processed_data_openai.py
 ```
 
 The script will load the processed data from the specified JSON file(`datasets/processed_data.json`), generate paraphrases for each instruction, and save the augmented data to an output file named `augmented_instruct_data_gpt_4.json`.
+
+Note: We had also tried paraphrasing the instructions using Claude-3 Haiku model via Anthropic API but we were getting rate limited because the total tokens of our instruction dataset was almost 10 Million which was more than what we could process with our Billing Tier.
 
 ## Using the Output for Diversity Metrics Evaluation
 
