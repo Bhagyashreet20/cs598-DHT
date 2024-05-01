@@ -83,13 +83,15 @@ sbatch slurm-scripts/create_lmdb.slurm
 To train a smaller LLM model you can run the `train.py` file from the `slurm-scripts` folder with:
 
 ```bash
-sbatch train-models.slurm``` 
+sbatch train-models.slurm
+``` 
 
 which should save the trained model in your `scratch` folder. It will automatically run for 5 epochs on the original data, but any training parameters and datasets can be edited within the file.
 To evaluate the trained model, yo ucan run the `eval.py` file from the `slurm-scripts` folder with:
 
 ```bash
-sbatch eval.slurm```
+sbatch eval.slurm
+```
 
 which will print out the desired metrics in the corresponding outputs file.
 
