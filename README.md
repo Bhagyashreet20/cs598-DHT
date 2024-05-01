@@ -79,6 +79,15 @@ For doing this we are using the Slurm script : `code/slurm-scripts/create_lmdb.s
 sbatch slurm-scripts/create_lmdb.slurm
 ```
 
+### Training and Evaluating a Flan-T5 Model
+To train a smaller LLM model you can run the `train.py` file from the `slurm-scripts' folder with:
+```sbatch train-models.slurm``` 
+which should save the trained model in your `scratch` folder. It will automatically run for 5 epochs on the original data, but any training parameters and datasets can be edited within the file.
+To evaluate the trained model, yo ucan run the `eval.py` file from the `slurm-scripts` folder with:
+```sbatch eval.slurm```
+which will print out the desired metrics in the corresponding outputs file.
+
+
 ### Training the E.T. Model
 
 To train the E.T. model on the TEACh dataset, we use the `train_et_model.slurm` SLURM script. This script sets up the necessary environment, loads the required modules, and executes the training command. It also specifies the computational resources needed for the job, such as memory, GPUs, and runtime.
