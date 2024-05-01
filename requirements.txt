@@ -1,0 +1,14 @@
+transformers
+sentencepiece
+tokenizers==0.13.3
+datasets
+bitsandbytes
+accelerate
+openai
+nltk
+sentence-transformers
+sklearn
+torch
+spacy
+gensim
+dotenv
