@@ -106,3 +106,47 @@ The results will be saved to two JSON files with timestamps: `evaluation_results
 - The paraphrasing script uses tokens from your OpenAI API quota. Monitor your usage to avoid unexpected charges.
 - The evaluation script requires the output file from the paraphrasing script. Ensure the file names match or update the file paths in the script accordingly.
 - The scripts may take a significant amount of time to run, depending on the size of your dataset and the performance of your machine.
+
+### Action sequence generation Paraphrasing
+
+Action sequence for a given instruction was generated using mixtral-8x7b-32768 model through [Groq API](https://wow.groq.com/). Use `mixtral8x7B-inference.py` file to generate sequence of actions.
+
+#### Prerequisites
+
+install `groq` package using `pip install groq`
+
+#### Setting Up Your Environment
+
+follow these steps to setup the Groq API key in the environment
+
+```bash
+vi ~/.bashrc
+export GROQ_API_KEY=<GROQ_API_KEY>
+source ~/.bashrc
+```
+
+#### Running the action sequence generation script
+
+```bash
+python mixtral8x7B-inference.py
+```
+
+#### training T5-large model with augmented dataset
+
+1. generate trainable dataset(conformign huggingface dataset format) using `hf_dataset_gen.py`
+
+```bash
+python hf_dataset_gen.py
+```
+
+2. Train the model using below command. This also computes evalaution metrics discussed in the report.
+
+```bash
+python train-augmented.py
+```
+
+#### Notes on minxtral inference script
+
+- At most one can intitate n requests simultaneously utilizing total 3000 tokens per minute. Refer [this link](https://console.groq.com/docs/rate-limits) for rate limits .
+- The script assumes the checkpoints folder already exists in the current directory. Ensure the file names match or update the file paths in the script accordingly.
+- The scripts may take a significant amount of time to run, depending on the size of your dataset and the performance of your machine.
