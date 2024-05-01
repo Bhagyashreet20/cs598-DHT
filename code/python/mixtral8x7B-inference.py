@@ -13,11 +13,11 @@ client = Groq()
 '''
 Assumes teach-dataset is already in place and have access to train dataset instances. replace the path accordingly
 '''
-dataset_path ='/projects/bcng/cs598-DHT/teach_data/edh_instances/processed_data.json'
-train_set = '/projects/bcng/cs598-DHT/teach_data/edh_instances/train/'
+dataset_path ='./datasets/processed_data.json'
+train_set = './teach_data/edh_instances/train/'
 
 
-def gen_prompt(instruction,objects):
+def gen_prompt(instruction,dialogue_history,objects):
 
     messages = [
         {"role":"system", "content":f'''Act like an embodied NLP agent  in a controlled environmnet where your  task is to generate sequence of actions based on dialog history given.
@@ -43,12 +43,13 @@ def gen_prompt(instruction,objects):
                                         '''},
 
 
-        {"role":"user","content":f'''    Please predict the action sequence for the given command. Some examples are :
-                                        "For the command 'please put the two newspapers from the self onto a single table', the predicted action sequence were: [‘Pickup Newspaper', 'Turn Right', 'Place CoffeeTable', 'Turn Left', 'Forward', 'Forward', 'Pan Left', 'Pickup Newspaper', 'Turn Right', 'Place CoffeeTable']" 
+       {"role":"user","content":f'''   Demonstration examples:
+                                        "For the command 'can I have some coffee?', given the dialogue history:[], the predicted action sequence was: [“Pickup mug”, “Place CoffeeMachine”]”
+                                        "For the command 'the mug is on the table', given the dialogue history:["I would like you to make breakfast||first you should make coffee in a clean coffee mug"], the predicted action sequence was:[ "Pickup Cup", "Place DiningTable" ]" 
+                                        "For the command 'have you looked in the fridge', given the dialogue history:["boil the potato by cooking it in water", "lets find it"], the predicted action sequence was: [ "Close Cabinet", "Open Cabinet", "Close Cabinet", "Open Microwave", "Close Microwave", "Open Cabinet", "Close Cabinet", "Open Cabinet", "Close Cabinet" ]”
 
-                                        "For the command 'make 2 slices of lettuce', the predicted action sequence were: ['Turn Right', 'Turn Right', 'Turn Right', 'Turn Right', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Open Fridge', 'Pan Left', 'Forward', 'Forward', 'Forward', 'Pickup Lettuce', 'Turn Left', 'Turn Left', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Forward', 'Turn Right', 'Pan Left', 'Pan Left', 'Turn Left', 'Place CounterTop']"
                                         Now, please predict the following sequence.
-                                        "For the command '{instruction}',  the predicted sequence of actions was: "
+                                        "For the command '{instruction}',given the dialogue history:{dialogue_history}the predicted sequence of actions was: "
 
 '''} ]
    
@@ -120,9 +121,9 @@ def get_action_sequence(messages,count=1):
                 )
              
                 # action_sequence = convert_to_list(response.choices[0].message.content)
-                print("response",response.choices[0].message.content,type(response.choices[0].message.content))
+                
                 action_sequence= format_response(response.choices[0].message.content)
-                print("formatted-action_sequence",action_sequence,"type", type(action_sequence))
+                
              
                 # print(prompt, paraphrase)
                 action_sequences.append(action_sequence)
@@ -135,42 +136,41 @@ def get_action_sequence(messages,count=1):
         #print(action_sequences)
         return action_sequences
 
+def get_step_dig_history(dialog_history,step):
+     step_count = int(step.split('_')[1])
+     return dialog_history[:step_count]
+
 def main():
     with open(dataset_path, 'r') as file:
             data = json.load(file)
     count=1
     checkpoint_interval = 10
     for file_key, content in data.items():
+        dialogue_history=[d_step['original_instruction'] for key,d_step in content.items()]
+        print('entire dialog history',dialogue_history)
         print(f'processing file:{file_key}',"file count", count)
-        for step, details in content.items():
+
+        for step, details in content.items():         
             if "augmented_actions" not in data[file_key][step]:
                     
-                instruction = details['instruction']
+                instruction = details['original_instruction']
                 print(f"running model inference for:{instruction}")
                 objects = gen_object_list(file_key)
-                messages = gen_prompt(instruction,objects)
-            
+                step_dig_history = get_step_dig_history(dialogue_history,step)
+                messages = gen_prompt(instruction,step_dig_history,objects)
                 action_sequences = get_action_sequence(messages)
                 if action_sequences is None:
                     break
                 data[file_key][step]["augmented_actions"] = action_sequences
                 print(f"Generated text for instruction:{instruction} is : {action_sequences}")
-                print("count",count)
+               
                 if count % checkpoint_interval == 0:
                     # Save a checkpoint
                     with open(f"./checkpoints/checkpoint_{count}.json", "w") as f_out:
                         json.dump(data, f_out, indent=4)
                     print("Checkpoint saved.")
-        #         if count==10:
-        #              break
-
-        
-
-        # if count==10:
-        #      break
-        
         count+=1
-    with open('final_dataset.json', "w") as f_out:
+    with open('./datasets/augmented_dataset.json', "w") as f_out:
            json.dump(data, f_out, indent=4)
     
 
